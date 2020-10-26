@@ -1,7 +1,7 @@
  > As you complete each section you **must** remove the prompt text. Every *turnin* of this project includes points for formatting of this README so keep it clean and keep it up to date. 
  > Prompt text is any lines beginning with "\<"
  > Replace anything between \<...\> with your project specifics and remove angle brackets. For example, you need to name your project and replace the header right below this line with that title (no angle brackets). 
-# \<Movie Database\>
+# \<Adventurer Game\>
  > Your author list below should include links to all members GitHub and should begin with a "\<" (remove existing author).
  
  > Authors: \<[Auberon Lai](https://github.com/alai031)\>
@@ -21,7 +21,7 @@
 ## Project Description
  > Your project description should summarize the project you are proposing. Be sure to include
  > * Why is it important or interesting to you?
- > * The movie database is relevant to society today, especially within our homes as we quarantine. A database would be useful to look up our favorite movies and display 
+ > * It is interesting to us because it entails multiple classes of characters compiled into a game that operates on different events that the adventurer encounters. 
  > * what we have learned through the C++ courses thus far.
  > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
  >   * [C++] (link)- A high level programming language taught at UCR
@@ -32,9 +32,6 @@
  > * resulting movies that match the query sent to the program.
  > * What are the three design patterns you will be using. For each design pattern you must:
  >   * Explain in 3 - 5 sentences why you picked this pattern and what feature you will implement with it
- > * Decorator: We picked the decorator design pattern because it will extend the class for movies and dynamically separate the info from the movie object so it does not
- > * take too much memory on the stack
- > * Factory Method: 
  > * 
  > * This description should be in enough detail that the TA/instructor can determine the complexity of the project and if it is sufficient for the team members to complete in the time allotted. 
 
