@@ -31,7 +31,7 @@
  > * The input of the project will be based upon the variety of "events" that occur through user prompt. The output will correspond to the input entered and the program will react appropriately, displaying text about the events that occur based on what the user selected.
  > * What are the three design patterns you will be using. For each design pattern you must:
  >   * Explain in 3 - 5 sentences why you picked this pattern and what feature you will implement with it
- > * Composite - We will use the composite design pattern to make an abstract class for the events the adventurer will encounter. The events will each be primitives that will contain the properties within the base abstract class as well as add their own properties unique to itself that will interact with the adventurer. The composite pattern will be great since the project consists of many events that we can represent as objects in a part-whole hierarchy.
+ > * Composite - We will use the composite design pattern to make an abstract class for the events the adventurer will encounter. The events will each be the end of the path (primitive) or composites that will create more events (such as a longer path or more enemies, etc). The composite pattern will be great since the project consists of many events that we can represent as objects in a part-whole hierarchy and the composite events can recursively make more events for the adventurer to encounter.
  > * This description should be in enough detail that the TA/instructor can determine the complexity of the project and if it is sufficient for the team members to complete in the time allotted. 
 
  > ## Phase II
