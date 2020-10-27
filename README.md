@@ -19,20 +19,19 @@
  > * Each member of the group **must** be committing code regularly and make sure their code is correctly attributed to them. We will be checking attributions to determine if there was equal contribution to the project.
 
 ## Project Description
+> * General description of project: Our project is a game that interacts with the user through the command line. It follows the adventurer (aka the user) who encounters several different events on their path to treasure. Based on their selection of one of three paths, they are presented with a random event that affects the adventurer in a certain way (decreases/increses health, gives them hp, makes them fight an enemy, etc). The game ends either with the adventurer succeeding in obtaining the treasure or being defeated.
  > Your project description should summarize the project you are proposing. Be sure to include
  > * Why is it important or interesting to you?
  > * It is interesting to us because it entails multiple classes of characters compiled into a game that operates on different events that the adventurer encounters. 
- > * what we have learned through the C++ courses thus far.
  > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
  >   * [C++] (link)- A high level programming language taught at UCR
  >   * [Vim] (link)- a command line editor also taught at UCR
  >   * [Visual Studio Code] (link) - a very poular text editor
  > * What will be the input/output of your project?
- > * The input of the project will be dependent upon the selection the user makes on the menu. They can search for certain movies by name, genre, etc. The output will be the
- > * resulting movies that match the query sent to the program.
+ > * The input of the project will be based upon the variety of "events" that occur through user prompt. The output will correspond to the input entered and the program will react appropriately, displaying text about the events that occur based on what the user selected.
  > * What are the three design patterns you will be using. For each design pattern you must:
  >   * Explain in 3 - 5 sentences why you picked this pattern and what feature you will implement with it
- > * 
+ > * Composite - We will use the composite design pattern to make an abstract class for the events the adventurer will encounter. The events will each be primitives that will contain the properties within the base abstract class as well as add their own properties unique to itself that will interact with the adventurer. The composite pattern will be great since the project consists of many events that we can represent as objects in a part-whole hierarchy.
  > * This description should be in enough detail that the TA/instructor can determine the complexity of the project and if it is sufficient for the team members to complete in the time allotted. 
 
  > ## Phase II
