@@ -51,6 +51,10 @@
  <img src = "https://github.com/cs100/final-project-alai031-borte012-bsaki001/blob/master/UML%20class.png" width = "1000"/>
  The composite strategy uses the Events class as its abstract class, Monster class as its composite, and Trap class as its leaf. The event class takes an instance of the Adventurer class so that it can call proper methods such as incrementing or decrementing health once the methods such as damage and bonus are called. Monster class also includes the method void callBackup() which is called once the int turnsTillBackup goes to 0. This creates another instance of the monster class if the monster is still alive (hp is not at zero).
  
+ The singleton strategy is implemented in our class diagram and is represented by the Game class. We only want one instance of the Game class to be running.
+ 
+ 
+ 
  > ## Phase III
  > You will need to schedule a check-in with the TA (during lab hours or office hours). Your entire team must be present. 
  > * Before the meeting you should perform a sprint plan like you did in Phase II
