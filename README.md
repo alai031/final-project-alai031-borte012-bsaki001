@@ -24,7 +24,7 @@
  > * Why is it important or interesting to you?
  > * It is interesting to us because it entails multiple classes of characters compiled into a game that operates on different events that the adventurer encounters. Also, this project allows plenty of room for being creative with the adventurer's situations / storyline.
  > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
- ##>   * [C++] (link)- a high level programming language taught at UCR
+ > ##  * [C++] (link)- a high level programming language taught at UCR
  >   * [Vim] (link)- a command line editor also taught at UCR
  >   * [Visual Studio Code] (link) - a very popular text editor
  > * What will be the input/output of your project?
