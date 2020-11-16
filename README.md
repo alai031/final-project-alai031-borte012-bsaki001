@@ -52,8 +52,8 @@
  The composite strategy uses the Events class as its abstract class, Monster class as its composite, and Trap class as its leaf. The event class takes an instance of the Adventurer class so that it can call proper methods such as incrementing or decrementing health once the methods such as damage and bonus are called. Monster class also includes the method void callBackup() which is called once the int turnsTillBackup goes to 0. This creates another instance of the monster class if the monster is still alive (hp is not at zero).
  
  The singleton strategy is implemented in our class diagram and is represented by the Game class. We only want one instance of the Game class to be created. To ensure this, we allow clients to access the Game class exclusively through the static Instance member function and make the constructor protected instead of public.  The protected constructor makes it so that a client that tries to instantiate the Game class directly will receive an error at compile-time.
- 
- 
+> 
+ **The strategy pattern is used in the Adventurer class. It allows the player to choose its character for the journey. They get the option of being the merge, the knight or the hunter. Each character has a different XP, health, damage, and strength starting levels as well as a specific weapon. Depending on the character chosen each event encountered will affect them differently. The journey will continue until the adventurer’s health is zero or until all enemies in the journey are defeated.**
  
  > ## Phase III
  > You will need to schedule a check-in with the TA (during lab hours or office hours). Your entire team must be present. 
