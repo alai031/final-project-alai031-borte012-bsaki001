@@ -19,10 +19,11 @@
  > * Each member of the group **must** be committing code regularly and make sure their code is correctly attributed to them. We will be checking attributions to determine if there was equal contribution to the project.
 
 ## Project Description
-> * General description of project: Our project is a game that interacts with the user through the command line. It follows the adventurer (aka the user) who encounters several different events on their path to treasure. Based on their selection of one of three paths, they are presented with a random event that affects the adventurer in a certain way (decreases/increases health points, attack, and defense stats, makes them fight an enemy, etc). The game ends either with the adventurer succeeding in obtaining the treasure or being defeated.
+> * General description of project: **Our project is a game that interacts with the user through the command line. It follows the adventurer (aka the user) who encounters several different events on their path to treasure. Based on their selection of one of three paths, they are presented with a random event that affects the adventurer in a certain way (decreases/increases health points, attack, and defense stats, makes them fight an enemy, etc). The game ends either with the adventurer succeeding in obtaining the treasure or being defeated.**
+
  > Your project description should summarize the project you are proposing. Be sure to include
  > * Why is it important or interesting to you?
- > * It is interesting to us because it entails multiple classes of characters compiled into a game that operates on different events that the adventurer encounters. Also, this project allows plenty of room for being creative with the adventurer's situations / storyline.
+ > * **It is interesting to us because it entails multiple classes of characters compiled into a game that operates on different events that the adventurer encounters. Also, this project allows plenty of room for being creative with the adventurer's situations / storyline.**
  > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
  > #### [C++] (link)- a high level programming language taught at UCR
  >  #### [Vim] (link)- a command line editor also taught at UCR
