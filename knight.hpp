@@ -11,6 +11,7 @@ class Knight : public Adventurer(){
 		void change_health(int change);
 		void change_damage(int change);
 		void change_strength(int change);
+		Weapon* get_weapon();
 		int get_health();
 		
 	private:
