@@ -1,4 +1,4 @@
-#include "adventurer.h"
+#include "adventurer.hpp"
 
 Adventurer::Adventurer(int xp, int health, int damage, int strength)
 {
