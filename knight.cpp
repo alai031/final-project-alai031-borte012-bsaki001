@@ -1,22 +1,9 @@
 #include "Knight.hpp"
+#include <iostream>
 
-void Knight::set_weapon(Weapon* w){
-	weapon = w;
-};
+using namespace std;
 
-void Knight::change_health(int change){
-	health += change;
-};
-
-void Knight::change_damage(int change){
-	damage += change;
-};
-
-void Knight::change_strength(int change){
-	strength += change;
-};
-
-void Knight::get_health(){
-	return health;
+void Knight::attackOutput(){
+	cout << "You shall not best me! The knight slashes the enemy with his sword." << endl;
 };
 
