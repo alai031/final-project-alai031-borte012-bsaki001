@@ -1,32 +1,11 @@
 #include "mage.h"
 
-Mage::Mage(int xp, int health, int damage, int strength) : Adventurer(xp, health, damage, strength)
+Mage::Mage(int health, int damage) : Adventurer(health, damage)
 {
-
+	this-> health = 150;
+	this-> damage = 10;
 }
 
-void Mage::set_weapon()
-{
-
+void Mage::attackMessage(){
+	std::cout << "Mage now attacking." << endl;
 }
-
-void Mage::change_health(int healthChange)
-{
-	health += healthChange;
-}
-
-void Mage::change_damage(int damageChange)
-{
-	damage += damageChange;
-}
-
-void Mage::change_strength(int strengthChange)
-{
-	strength += strengthChange;
-}
-
-int Mage::get_health()
-{
-	return health;
-}
-
