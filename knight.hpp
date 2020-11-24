@@ -6,7 +6,7 @@
 class Knight : public Adventurer(){
 	public:
 		Knight() : health(250), damage(10) {};
-		void attackOutput(); //What the knight says when he attacks
+		void attackMessage(); //What the knight says when he attacks
 };
 
 #endif
