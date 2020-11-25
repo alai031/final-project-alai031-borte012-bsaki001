@@ -7,7 +7,7 @@ class Game() {
 		static Game* Instance();
 
 	protected:
-		Game() : adventurer(nullptr); 
+		Game() : adventurer(nullptr) {}; 
 
 	private:
 		static Game* _instance;
