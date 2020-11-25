@@ -48,7 +48,7 @@
  >   * These cards should represent roughly 7 days worth of development time for your team, taking you until your first meeting with the TA
 ## Class Diagram
  > Include a class diagram(s) for each design pattern and a description of the diagram(s). This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper OMT notation (as discussed in the course slides). You may combine multiple design patterns into one diagram if you'd like, but it needs to be clear which portion of the diagram represents which design pattern (either in the diagram or in the description). 
- <img src = "https://github.com/cs100/final-project-alai031-borte012-bsaki001/blob/master/Updated%20UML%20class%20diagram.png" width = "1000"/>
+ <img src = "https://github.com/cs100/final-project-alai031-borte012-bsaki001/blob/master/UML%20class.png" width = "1000"/>
  
  >**The composite strategy uses the Events class as its abstract class, Monster class as its composite, and Trap class as its leaf. The event class takes an instance of the Adventurer class so that it can call proper methods such as incrementing or decrementing health once the methods such as damage and bonus are called. Monster class also includes the method void callBackup() which is called once the int turnsTillBackup goes to 0. This creates another instance of the monster class if the monster is still alive (hp is not at zero).**
  
