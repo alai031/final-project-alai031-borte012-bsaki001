@@ -4,13 +4,11 @@
 
 class Trap : public Events {
 public:
-Trap(Adventurer* adventurer, int damage, int bonus) {
-	this->adventurer = adventurer;
-	this->damage = damage;
-	this->bonus = bonus;
-}
-virtual void damage();
-virtual void bonus();
+Trap(Adventurer* a) : Events(a) {}
+private:
+void damage();
+//void bonus();
+void setrandDamage();
 };
 
 #endif

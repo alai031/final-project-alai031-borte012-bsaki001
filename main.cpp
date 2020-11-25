@@ -39,15 +39,15 @@ cout << "3. Story 3" << endl;
 cin >> userInput;
 
 if (userInput == 1) {
-game->journey = new Story1(adventurer);
+game->journey = new Story1(game->adventurer);
 }
 
 else if (userInput == 2) {
-game->journey = new Story2();
+game->journey = new Story2(game->adventurer);
 }
 
 else if (userInput == 3) {
-game->journey = new Story3();
+game->journey = new Story3(game->adventurer);
 }
 
 else {

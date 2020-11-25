@@ -1,20 +1,37 @@
 #include "monster.hpp"
-
-Monster::Monster(int damage, int bonus, int hp, int turns) : damage(damage), bonus(bonus), health(hp), turnsTillBackup(turns) {}
+#include <stdlib.h>
+#include <iostream>
 
 void Monster::damage() {
-	adventurer->hp -= damage;
+	cout << "The monster inflicts " + damage + " damage to the adventurer!" << endl;
+	adventurer->change_health(damage);
+	cout << "The adventurer has " + adventurer->get_health() + " remaining." << endl;
 }
 
+/*
 void Monster::bonus() {
 	adventurer->xp += bonus;
 }
-
-void Monster::callBackup() {
-	Monster* newMonster = new Monster(damage, bonus, hp, turns);
-	adventurer->addMonster();
-}
+*/
 
 void Monster::decrementHealth(int damage) {
+	cout << "The adventurer inflicts " + damage + " damage to the monster!" << endl;
 	health -= damage;
+	if (this->health <= 0){
+		cout << "The monster faints." << endl;
+	}
+	else {
+		cout << "The monster has " + health + " remaining." << endl;
+	}
+}
+
+void Monster::setrandDamage(){
+	setDamage(rand() % 15 + 15);
+	cout << "and " + damage + " attack!" << endl;
+//	setBonus(rand() % 5 + 5);
+}
+
+void Monster::setrandHealth() {
+	health = rand() % 5 + 5;
+	cout << "A monster appears with " + health + " health ";
 }
