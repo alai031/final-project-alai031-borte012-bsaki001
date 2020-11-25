@@ -5,17 +5,21 @@ using namespace std;
 
 class Monster : public Events {
 private:
-int health;
+int health = -1;
+int turnsTillBackup = -1;
+vector<Events*> childMonsters
 public:
 Monster(Adventurer* a) : Events(a) {};
 this->setrandHealth();
 this->setrandDamage();
+turnsTillBackup = 3;
 };
 void damage();
 //void bonus();
 void decrementHealth();
 void setrandDamage();
 void setrandHealth();
+void callbackup();
 };
 
 #endif
