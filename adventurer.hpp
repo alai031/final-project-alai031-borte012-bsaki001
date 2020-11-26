@@ -1,12 +1,14 @@
 #ifndef ADVENTURER_HPP
 #define ADVENTURER_HPP
 
+#include <iostream>
+
 class Adventurer{
 protected:
-	int health;
-	int damage;
+	int health = 0;
+	int damage = 0;
 public:
-	Adventurer(int health, int damage);
+	Adventurer();
 	virtual void attackMessage();
 	void change_health(int healthChange);
 	void attackDamage();

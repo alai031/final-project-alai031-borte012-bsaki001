@@ -1,6 +1,6 @@
 #include "adventurer.hpp"
 
-Adventurer::Adventurer(int health, int damage)
+Adventurer::Adventurer()
 {
 	this->health = health;
 	this->damage = damage;
@@ -21,5 +21,5 @@ int Adventurer::get_health()
 	return health;
 }
 void Adventurer::attackMessage(){
-
+	std::cout << " " << std::endl;
 }
