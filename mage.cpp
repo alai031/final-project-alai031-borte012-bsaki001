@@ -7,5 +7,5 @@ Mage::Mage(int health, int damage) : Adventurer(health, damage)
 }
 
 void Mage::attackMessage(){
-	std::cout << "Mage now attacking." << endl;
+	std::cout << "Back off or be cursed. The Mage casts a curse upon the enemy." << endl;
 }
