@@ -1,22 +1,27 @@
 #ifndef __EVENTS_HPP__
 #define __EVENTS_HPP__
+
 #include "adventurer.hpp"
 
 class Events {
-private:
-int damage = 0;
-//int bonus = 0;
-
 protected:
+int dmg = -1;
+//int bonus = 0;
 Adventurer* adventurer = nullptr;
 
 public:
-Events(Adventurer* a) {adventurer = a};
+Events(Adventurer* a) {adventurer = a;};
 virtual void damage() = 0;
 //virtual void bonus() = 0;
 virtual void setrandDamage() = 0;
-void setDamage(int damage) {
-	this-> damage = damage;
+void setDamage(int d) {
+	dmg = d;
+}
+int getDamage() {
+	return dmg;
+}
+Adventurer* getAdventurer() {
+return adventurer;
 }
 /*
 void setBonus(int bonus) {

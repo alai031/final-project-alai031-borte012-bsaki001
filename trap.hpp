@@ -4,8 +4,9 @@
 
 class Trap : public Events {
 public:
-Trap(Adventurer* a) : Events(a) {}
-private:
+Trap(Adventurer* a) : Events(a) {
+setrandDamage();
+}
 void damage();
 //void bonus();
 void setrandDamage();
