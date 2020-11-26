@@ -6,7 +6,7 @@
 class Mage : public Adventurer 
 {
 public:
-	Mage(int health, int damage);
+	Mage();
 	void attackMessage();
 };
 
