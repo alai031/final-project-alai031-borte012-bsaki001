@@ -11,9 +11,9 @@ void Adventurer::change_health(int healthChange)
 	health -= healthChange;
 }
 
-void Adventurer::attackDamage()
+void Adventurer::attackDamage(Monster* monster)
 {
-	this->damage = damage;
+	monster->decrementHealth(damage);
 }
 
 int Adventurer::get_health()
