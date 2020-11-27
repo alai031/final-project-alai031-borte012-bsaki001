@@ -2,7 +2,7 @@
 #define ADVENTURER_HPP
 
 #include <iostream>
-#include "mock_monster.hpp"
+#include "monster.hpp"
 
 class Monster;
 

@@ -4,7 +4,7 @@
 #include "gtest/gtest.h"
 
 #include "game.hpp"
-#include "adventurerMock.hpp"
+#include "adventurer.hpp"
 
 TEST(GameTest, GameInstanceFunction) {
 	Game* newGame = newGame->Instance();

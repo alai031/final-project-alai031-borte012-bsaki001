@@ -1,7 +1,7 @@
 #ifndef __EVENTS_HPP__
 #define __EVENTS_HPP__
 
-#include "mockadventurer.hpp"
+#include "adventurer.hpp"
 
 class Events {
 protected:

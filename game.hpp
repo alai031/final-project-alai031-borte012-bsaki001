@@ -1,7 +1,7 @@
 #ifndef GAME_CLASS
 #define GAME_CLASS
-//#include "adventurer.hpp"
-#include "adventurerMock.hpp"
+#include "adventurer.hpp"
+//#include "adventurerMock.hpp"
 
 class Game{
 	public:

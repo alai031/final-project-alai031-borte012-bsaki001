@@ -4,7 +4,7 @@
 #include "gtest/gtest.h"
 
 #include "trap.hpp"
-#include "mockadventurer.hpp"
+#include "adventurer.hpp"
 
 TEST(TrapTest, trapConstructor) {
     Adventurer* a = new Adventurer();

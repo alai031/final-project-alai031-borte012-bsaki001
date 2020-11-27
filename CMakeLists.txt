@@ -6,12 +6,9 @@ SET(CMAKE_CXX_STANDARD 11)
 
 ADD_EXECUTABLE(test
 	unit_test.cpp
-	adventurerMock.cpp
-	monsterMock.cpp
 	knight.cpp
 	hunter.cpp
 	adventurer.cpp
-	mock_monster.cpp
 	mage.cpp
 	monster.cpp
 	trap.cpp

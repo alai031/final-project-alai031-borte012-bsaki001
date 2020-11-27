@@ -4,7 +4,7 @@
 #include "gtest/gtest.h"
 
 #include "monster.hpp"
-#include "mockadventurer.hpp"
+#include "adventurer.hpp"
 
 TEST(MonsterTest, monsterConstructor) {
     Adventurer* a = new Adventurer();

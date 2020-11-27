@@ -3,8 +3,8 @@
 
 #include "gtest/gtest.h"
 
-#include "adventurerMock.hpp"
-#include "monsterMock.hpp"
+#include "adventurer.hpp"
+#include "monster.hpp"
 #include "hunter.hpp"
 
 TEST(HunterTest, Constructor) {
