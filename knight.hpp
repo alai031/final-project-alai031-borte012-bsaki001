@@ -1,11 +1,12 @@
 #ifndef KNIGHT_CLASS
 #define KNIGHT_CLASS
 
-#include "Adventurer.hpp"
+#include "adventurerMock.hpp"
+//#include "Adventurer.hpp"
 
-class Knight : public Adventurer(){
+class Knight : public Adventurer {
 	public:
-		Knight() : health(250), damage(10) {};
+		Knight();
 		void attackMessage(); //What the knight says when he attacks
 };
 
