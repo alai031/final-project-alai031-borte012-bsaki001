@@ -23,3 +23,4 @@ void Adventurer::attackDamage(monsterMock* enemy){
 int Adventurer::getHealth(){
 	return health;
 }
+

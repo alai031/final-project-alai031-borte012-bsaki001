@@ -9,6 +9,7 @@ ADD_EXECUTABLE(test
 	adventurerMock.cpp
 	monsterMock.cpp
 	knight.cpp
+	hunter.cpp
 )
 
 TARGET_LINK_LIBRARIES(test  gtest)
