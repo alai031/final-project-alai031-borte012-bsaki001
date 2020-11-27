@@ -6,6 +6,7 @@ SET(CMAKE_CXX_STANDARD 11)
 
 ADD_EXECUTABLE(test
         unit_test.cpp
+	mage.cpp
         adventurer.cpp
         mock_monster.cpp
 )
