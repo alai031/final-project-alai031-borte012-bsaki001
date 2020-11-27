@@ -34,19 +34,19 @@ TEST(KnightTest, attackDamageMonsterDies) {
     Monster* monster = new Monster(adventurer);
     monster->setHealth(5);
     adventurer->attackDamage(monster);
-    EXPECT_EQ(monster->getHealth(), 0); 
+    EXPECT_LE(monster->getHealth(), 0); 
 }
 
 TEST(KnightTest, changeHealthWithPositiveArg) {
     Adventurer* adventurer = new Knight();
     adventurer->change_health(40);
-    EXPECT_EQ(adventurer->get_health(), 290);
+    EXPECT_EQ(adventurer->get_health(), 210);
 }
 
 TEST(KnightTest, changeHealthWithNegativeArg) {
     Adventurer* adventurer = new Knight();
     adventurer->change_health(-50);
-    EXPECT_EQ(adventurer->get_health(), 200);
+    EXPECT_EQ(adventurer->get_health(), 300);
 }
 
 TEST(KnightTest, changeHealthWithZeroArg) {
@@ -57,13 +57,13 @@ TEST(KnightTest, changeHealthWithZeroArg) {
 
 TEST(KnightTest, changeHealthToZeroHP) {
     Adventurer* adventurer = new Knight();
-    adventurer->change_health(-250);
+    adventurer->change_health(250);
     EXPECT_EQ(adventurer->get_health(), 0);
 }
 
 TEST(KnightTest, changeHealthToNegativeHP) {
     Adventurer* adventurer = new Knight();
-    adventurer->change_health(-300);
+    adventurer->change_health(300);
     EXPECT_EQ(adventurer->get_health(), 0);
 }
 
@@ -74,14 +74,14 @@ TEST(KnightTest, getHealthFullHP){
 
 TEST(KnightTest, getHealthZeroHP){
     Adventurer* adventurer = new Knight();
-    adventurer->change_health(-250);
+    adventurer->change_health(250);
     EXPECT_EQ(adventurer->get_health(), 0);
 }
 
 TEST(KnightTest, getHealthAtDeath) {
     Adventurer* adventurer = new Knight();
-    adventurer->change_health(-150);
-    adventurer->change_health(-230);
+    adventurer->change_health(150);
+    adventurer->change_health(230);
     EXPECT_EQ(adventurer->get_health(), 0);
 }
 
