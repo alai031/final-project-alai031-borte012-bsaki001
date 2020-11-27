@@ -10,7 +10,9 @@ ADD_EXECUTABLE(test
 	monsterMock.cpp
 	knight.cpp
 	hunter.cpp
+	adventurer.cpp
+	mock_monster.cpp
 )
 
-TARGET_LINK_LIBRARIES(test  gtest)
+TARGET_LINK_LIBRARIES(test gtest)
 TARGET_COMPILE_DEFINITIONS(test PRIVATE gtest_disable_pthreads=ON)

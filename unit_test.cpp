@@ -1,5 +1,3 @@
-
-  
 #include "gtest/gtest.h"
 #include "monsterMock.hpp"
 #include "adventurerMock.hpp"
@@ -7,7 +5,7 @@
 #include "knight_test.hpp"
 #include "hunter.hpp"
 #include "hunter_test.hpp"
-
+#include "adventurer_test.hpp"
 
 int main(int argc, char **argv) {
   ::testing::InitGoogleTest(&argc, argv);
