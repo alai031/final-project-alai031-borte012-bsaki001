@@ -2,6 +2,7 @@
 #define ADVENTURER_HPP
 
 #include <iostream>
+#include "monster.hpp"
 
 class Adventurer{
 protected:
@@ -11,7 +12,7 @@ public:
 	Adventurer();
 	virtual void attackMessage();
 	void change_health(int healthChange);
-	void attackDamage();
+	void attackDamage(Monster* monster);
 	int get_health();
 
 };
