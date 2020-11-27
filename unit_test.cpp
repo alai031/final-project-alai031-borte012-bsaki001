@@ -7,6 +7,8 @@
 #include "hunter_test.hpp"
 #include "adventurer_test.hpp"
 #include "mage_test.hpp"
+#include "monster_test.hpp"
+#include "trap_test.hpp"
 
 int main(int argc, char **argv) {
   ::testing::InitGoogleTest(&argc, argv);

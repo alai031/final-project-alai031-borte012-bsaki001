@@ -13,6 +13,8 @@ ADD_EXECUTABLE(test
 	adventurer.cpp
 	mock_monster.cpp
 	mage.cpp
+	monster.cpp
+	trap.cpp
 )
 
 TARGET_LINK_LIBRARIES(test gtest)
