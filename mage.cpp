@@ -1,4 +1,4 @@
-#include "mage.h"
+#include "mage.hpp"
 
 Mage::Mage() : Adventurer()
 {
