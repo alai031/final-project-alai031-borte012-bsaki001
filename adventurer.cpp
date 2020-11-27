@@ -21,8 +21,10 @@ void Adventurer::attackDamage(Monster* monster)
 
 int Adventurer::get_health()
 {
+
 	return health;
 }
+
 void Adventurer::attackMessage(){
-	std::cout << "Default Attack Message " << std::endl;
+        std::cout << "Adventurer's default attack message " << std::endl;
 }
