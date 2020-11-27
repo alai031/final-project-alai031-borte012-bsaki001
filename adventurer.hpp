@@ -2,7 +2,7 @@
 #define ADVENTURER_HPP
 
 #include <iostream>
-#include "monster.hpp"
+#include "mock_monster.hpp"
 
 class Adventurer{
 protected:
