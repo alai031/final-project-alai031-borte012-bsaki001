@@ -9,6 +9,8 @@
 #include "mage_test.hpp"
 #include "monster_test.hpp"
 #include "trap_test.hpp"
+#include "game.hpp"
+#include "game_test.hpp"
 
 int main(int argc, char **argv) {
   ::testing::InitGoogleTest(&argc, argv);

@@ -15,9 +15,6 @@ class Adventurer {
 	protected:
 		int health = 0;
 		int damage = 0;		
-
 };
-
-
 
 #endif
