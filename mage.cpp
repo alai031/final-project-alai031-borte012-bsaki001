@@ -3,7 +3,7 @@
 Mage::Mage() : Adventurer()
 {
 	this-> health = 150;
-	this-> damage = 10;
+	this-> damage = 20;
 }
 
 void Mage::attackMessage(){

@@ -34,7 +34,7 @@ TEST(MageTest, attckMessgeTest){
         mage->attackDamage(monster);
         mage->attackMessage();
         EXPECT_EQ(mage->get_health(),150);
-	EXPECT_EQ(monster->get_health(),20);
+	EXPECT_EQ(monster->get_health(),10);
 }
 
 TEST(MageTest, attckMessgeAndChangeHealthTest){
@@ -44,7 +44,7 @@ TEST(MageTest, attckMessgeAndChangeHealthTest){
         mage->attackMessage();
         mage->change_health(-250);
         EXPECT_EQ(mage->get_health(),400);
-	EXPECT_EQ(monster->get_health(),20);
+	EXPECT_EQ(monster->get_health(),10);
 }
 
 TEST(MageTest, MonsterKillsMageTest ){
@@ -80,7 +80,7 @@ TEST(MageTest, MageInflictsDamageTest){
         Monster* monster = new Monster(60,66);
         mage->attackDamage(monster);
 	mage->attackMessage();
-        EXPECT_EQ(monster->get_health(),50);
+        EXPECT_EQ(monster->get_health(),40);
 }
 
 TEST(MageTest, MageInflictsDamageAndGetsAttackTest){
@@ -88,7 +88,7 @@ TEST(MageTest, MageInflictsDamageAndGetsAttackTest){
         Monster* monster = new Monster(60,66);
         mage->attackDamage(monster);
         mage->attackMessage();
-        EXPECT_EQ(monster->get_health(),50);
+        EXPECT_EQ(monster->get_health(),40);
 	monster->attack(mage);
 	EXPECT_EQ(mage->get_health(),84);
 }
