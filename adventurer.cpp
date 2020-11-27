@@ -24,5 +24,5 @@ int Adventurer::get_health()
 	return health;
 }
 void Adventurer::attackMessage(){
-	std::cout << " " << std::endl;
+	std::cout << "Default Attack Message " << std::endl;
 }
