@@ -4,6 +4,8 @@
 #include <iostream>
 #include "mock_monster.hpp"
 
+class Monster;
+
 class Adventurer{
 protected:
 	int health = 0;
