@@ -11,7 +11,7 @@ TEST(TrapTest, trapConstructor) {
     Trap* test = new Trap(a);
     EXPECT_EQ(test->getAdventurer(), a);
 }
-/*
+
 TEST(TrapTest, trapConstructor2) {
 	Adventurer* a = new Adventurer();
 	Trap* test = new Trap(a);
@@ -119,6 +119,6 @@ TEST(TrapTest, trapsetrandD2) {
 	EXPECT_GE(test2->getDamage(), 1);
         EXPECT_LE(test2->getDamage(), 5);
 }
-*/
+
 
 #endif
