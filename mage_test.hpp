@@ -30,67 +30,77 @@ TEST(MageTest, negHealthCheckTest){
 
 TEST(MageTest, attckMessgeTest){
         Adventurer* mage = new Mage();
-        Monster* monster = new Monster(30,40);
+        Monster* monster = new Monster(mage);
+	monster->setHealth(30);
         mage->attackDamage(monster);
         mage->attackMessage();
         EXPECT_EQ(mage->get_health(),150);
-	EXPECT_EQ(monster->get_health(),10);
+	EXPECT_EQ(monster->getHealth(),10);
 }
 
 TEST(MageTest, attckMessgeAndChangeHealthTest){
         Adventurer* mage = new Mage();
-        Monster* monster = new Monster(30,40);
+        Monster* monster = new Monster(mage);
+        monster->setHealth(30);
         mage->attackDamage(monster);
         mage->attackMessage();
         mage->change_health(-250);
         EXPECT_EQ(mage->get_health(),400);
-	EXPECT_EQ(monster->get_health(),10);
+	EXPECT_EQ(monster->getHealth(),10);
 }
 
 TEST(MageTest, MonsterKillsMageTest ){
 	Adventurer* mage = new Mage();
-	Monster* monster = new Monster(40,30);
+	Monster* monster = new Monster(mage);
+        monster->setHealth(40);
 	mage->attackDamage(monster);
 	mage->attackMessage();
-	monster->attack(mage);
-	monster->attack(mage);
-	monster->attack(mage);
-	monster->attack(mage);
-	monster->attack(mage);
+	monster->damage();
+	monster->damage();
+	monster->damage();
+	monster->damage();
+	monster->damage();
+        monster->damage();
+        monster->damage();
+        monster->damage();
 	EXPECT_EQ(mage->get_health(),0);
 }
 
 TEST(MageTest, changeHealthByMonsterAttackTest){
         Adventurer* mage = new Mage();
-        Monster* monster = new Monster(60,66);
-        monster->attack(mage);
-        EXPECT_EQ(mage->get_health(),84);
+        Monster* monster = new Monster(mage);
+        monster->setHealth(60);
+        monster->damage();
+        EXPECT_EQ(mage->get_health(),143);
 }
 
 TEST(MageTest, changeHealthAndMonsterAttackTest){
         Adventurer* mage = new Mage();
-        Monster* monster = new Monster(20,35);
+        Monster* monster = new Monster(mage);
+        monster->setHealth(20);
 	mage->change_health(20);
-        monster->attack(mage);
-        EXPECT_EQ(mage->get_health(),95);
+        monster->damage();
+        EXPECT_EQ(mage->get_health(),122);
 }
 
 TEST(MageTest, MageInflictsDamageTest){
         Adventurer* mage = new Mage();
-        Monster* monster = new Monster(60,66);
+        Monster* monster = new Monster(mage);
+        monster->setHealth(60);
         mage->attackDamage(monster);
 	mage->attackMessage();
-        EXPECT_EQ(monster->get_health(),40);
+        EXPECT_EQ(monster->getHealth(),40);
 }
 
 TEST(MageTest, MageInflictsDamageAndGetsAttackTest){
         Adventurer* mage = new Mage();
-        Monster* monster = new Monster(60,66);
+        Monster* monster = new Monster(mage);
+        monster->setHealth(60);
         mage->attackDamage(monster);
         mage->attackMessage();
-        EXPECT_EQ(monster->get_health(),40);
-	monster->attack(mage);
-	EXPECT_EQ(mage->get_health(),84);
+        EXPECT_EQ(monster->getHealth(),40);
+	monster->damage();
+	EXPECT_EQ(mage->get_health(),143);
 }
 
 
