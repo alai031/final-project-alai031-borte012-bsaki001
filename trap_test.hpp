@@ -66,6 +66,9 @@ TEST(TrapTest, trapDamage) {
         int i = test->getAdventurer()->get_health();
 	test->damage();
 	i -= test->getDamage();
+	if (i < 0) {
+		i = 0;
+	}
 	EXPECT_EQ(test->getAdventurer()->get_health(), i);
 }
 
@@ -79,6 +82,9 @@ TEST(TrapTest, trapDamage2) {
 	test->setDamage(10);
 	test->damage();
 	i -= test->getDamage();
+	if (i < 0) {
+                i = 0;
+        }
         EXPECT_EQ(test->getAdventurer()->get_health(), i);
 }
 
@@ -90,7 +96,7 @@ TEST(TrapTest, trapDamageandGet) {
         test->damage();
 	int j = test->getAdventurer()->get_health();
         int k = i - j;
-        EXPECT_EQ(test->getDamage(), k);
+        EXPECT_GE(test->getDamage(), k);
 }
 
 TEST(TrapTest, trapsetrandD) {
