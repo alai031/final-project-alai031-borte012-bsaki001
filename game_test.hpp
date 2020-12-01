@@ -4,6 +4,7 @@
 #include "gtest/gtest.h"
 
 #include "game.hpp"
+#include "knight.hpp"
 #include "adventurer.hpp"
 
 TEST(GameTest, GameInstanceFunction) {
@@ -25,9 +26,9 @@ TEST(GameTest, GameNullAdventurerPtr) {
 	EXPECT_EQ(newGame->adventurer, nullptr);
 }
 
-TEST(GameTest, GameValidAventurerPtr) {
+TEST(GameTest, GameValidAdventurerPtr) {
 	Game* newGame = newGame->Instance();
-	newGame->adventurer = new Adventurer();
+	newGame->adventurer = new Knight();
 	EXPECT_NE(newGame->adventurer, nullptr);
 }
 
