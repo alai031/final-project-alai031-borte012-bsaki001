@@ -2,6 +2,8 @@
 #define __TRAP_HPP__
 #include "events.hpp"
 
+class Adventurer;
+
 class Trap : public Events {
 public:
 Trap(Adventurer* a) : Events(a) {

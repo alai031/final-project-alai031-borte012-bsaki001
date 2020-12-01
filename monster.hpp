@@ -11,7 +11,7 @@ int health = -1;
 int turnsTillBackup = -1;
 std::vector<Events*> childMonsters;
 public:
-Monster(Adventurer* a) : Events(a) {;
+Monster(Adventurer* a) : Events(a) {
 setrandHealth();
 setrandDamage();
 turnsTillBackup = 3;

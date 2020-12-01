@@ -1,4 +1,5 @@
 #include "adventurer.hpp"
+#include "monster.hpp"
 
 Adventurer::Adventurer()
 {
