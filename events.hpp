@@ -1,8 +1,7 @@
 #ifndef __EVENTS_HPP__
 #define __EVENTS_HPP__
 
-#include "adventurer.hpp"
-
+class Adventurer;
 class Events {
 protected:
 int dmg = -1;

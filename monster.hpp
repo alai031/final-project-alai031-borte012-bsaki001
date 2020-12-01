@@ -3,6 +3,7 @@
 
 #include "events.hpp"
 #include <vector>
+class Adventurer;
 
 class Monster : public Events {
 private:
