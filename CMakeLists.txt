@@ -15,6 +15,18 @@ ADD_EXECUTABLE(test
 	game.cpp
 )
 
+ADD_EXECUTABLE(main
+	main.cpp
+	knight.cpp
+	hunter.cpp
+	adventurer.cpp
+	mage.cpp
+	monster.cpp
+	trap.cpp
+	game.cpp
+	story3.cpp
+)
+
 
 TARGET_LINK_LIBRARIES(test  gtest)
 TARGET_COMPILE_DEFINITIONS(test PRIVATE gtest_disable_pthreads=ON)
