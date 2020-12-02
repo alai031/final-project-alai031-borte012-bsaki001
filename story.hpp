@@ -8,12 +8,12 @@ public:
 Story(Adventurer* a){
 adventurer = a;
 counter = 10;
-this->story();
 }
 virtual void story() = 0;
-private:
+protected:
 Adventurer* adventurer = nullptr;
 int counter = 0;
 };
+
 
 #endif
