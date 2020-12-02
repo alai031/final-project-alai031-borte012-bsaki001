@@ -1,5 +1,13 @@
 #include <iostream>
 #include "adventurer.hpp"
+#include "knight.hpp"
+#include "mage.hpp"
+#include "hunter.hpp"
+//#include "story1.hpp"
+#include "story2.hpp"
+//#include "story3.hpp"
+//#include "game.hpp"
+
 using namespace std;
 
 int main () {
