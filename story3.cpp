@@ -26,11 +26,9 @@ void Story3::story(){
 		if (userInput == randNum){
 			Monster* newMonster = new Monster(adventurer);
 			while (adventurer->get_health() != 0 && newMonster->getHealth() > 0){
+				newMonster->damage();
 				adventurer->attackMessage();
 				adventurer->attackDamage(newMonster);
-				if (newMonster->getHealth() > 0){
-					newMonster->damage();
-				}
 			}
 		}
 
