@@ -9,5 +9,5 @@ Hunter::Hunter(){
 };
 
 void Hunter::attackMessage(){
-	cout << "Take this! The hunter stabs the enemy using his knife." << endl;
+	cout << "Take this! The adventurer stabs the enemy using his knife." << endl;
 };

@@ -52,7 +52,7 @@ int main () {
 		cout << "Choose a story (1, 2, or 3)" << endl;
 		cout << "1. Story 1" << endl;
 		cout << "2. Story 2" << endl;
-		cout << "3. Story 3" << endl;
+		cout << "3. Story 3: Survive to be Known or Die to be Forgotten" << endl;
 		cout << "Enter 'q' to quit" << endl;
 		cin >> userInput2;
 
