@@ -87,5 +87,5 @@ void Story1::story() {
 		else {
 			std::cout << "Deliver the supplies and rest up to help defend the Kingdom from the incoming attack." << std::endl;
 		}
-}
+	}
 }
