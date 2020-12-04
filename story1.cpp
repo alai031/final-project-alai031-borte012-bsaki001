@@ -11,17 +11,18 @@ void Story1::story() {
 	std::cout << "Your mission is to go on a journey to collect the necessary supplies." << std::endl;
 	std::cout << "You will choose between paths to find what you need. " << std::endl;
 	while (counter != 0) {
-		int userInput = 0;
-		while (userInput != 1 && userInput != 2) {
+		char userInput = '0';
+		while (userInput != '1' && userInput != '2' && userInput != 'q') {
 			std::cout << "Choose a number 1 - 2 to decides which path to continue through." << std::endl;
 			std::cin >> userInput;
-			if (userInput != 1 && userInput != 2) {
+			if (userInput != '1' && userInput != '2' && userInput 'q') {
 				std::cout << "Invalid input. Please try again." << std::endl;
 			}
 		}
+		int inputUser = userInput - '0';
 		int randNum = rand() % 2;
 
-		if (userInput == randNum && counter!= 0) {
+		if (inputUser == randNum && counter!= 0) {
 			Monster* newMonster = new Monster(adventurer);
 			while (adventurer->get_health() != 0 && newMonster->getHealth() > 0) {
 				if (adventurer->get_health() != 0) {
@@ -36,10 +37,14 @@ void Story1::story() {
 				}
 			}
 		}
+		else if (userInput == 'q'){
+			std::cout << "Quitting game ..." << std::endl;
+			return;
+		}
 		else {
 			Trap* newTrap = new Trap(adventurer);
 			int randNum = rand() % 2;
-			if (randNum == userInput) {
+			if (randNum == inputUser) {
 				std::cout << "Oh! Wait it is a double trap." << std::endl;
 				newTrap->damage();
 				if (adventurer->get_health() != 0) {
