@@ -7,8 +7,13 @@
 void Story1::story() {
 	counter = 20;
 	std::cout << "Welcome to your journey " << adventurer->getName() << std::endl;
-	std::cout << "Your Kingdom has gotten wind of an incoming attack unfortunately there isn't much supplies to win." << std::endl;
-	std::cout << "Your mission is to go on a journey to collect the necessary supplies." << std::endl;
+	if (adventurer->getName() == "mage") {
+		std::cout<< "The kingdom was put under a spell for your journey you must find all the supplies to counter act the spell with another and then create a protection spell to protect the kingdom from any future attacks." << std::endl;
+	}
+	else if (adventurer->getName() == "knight" || adventurer->getName() == "hunter") {
+		std::cout << "Your Kingdom has gotten wind of an incoming attack unfortunately there isn't much supplies to win." << std::endl;
+		std::cout << "Your mission is to go on a journey to collect the necessary supplies." << std::endl;
+	}
 	std::cout << "You will choose between paths to find what you need. " << std::endl;
 	while (counter != 0) {
 		char userInput = '0';
@@ -63,14 +68,24 @@ void Story1::story() {
 
 		if (adventurer->get_health() == 0) {
 			std::cout << "The journey was too much for you to handle and took your life. " << std::endl;
-			std::cout << "Sorry you couldn't complete your journey, the Kingdom will not get the supplies to defend themselves from the incoming attacked." << std::endl;
-			counter = 0;
+			if (adventurer->getName() == "mage") {
+				std::cout << "The casted spell will not be lift" << std::endl;
+				counter = 0;
+			}
+			else {
+				std::cout << "Sorry you couldn't complete your journey, the Kingdom will not get the supplies to defend themselves from the incoming attacked." << std::endl;
+				counter = 0;
+			}
 		}
 	}
 
 	if (adventurer->get_health() != 0) {
 		std::cout << "Congratulations " << adventurer->getName() << " you have survived your journey and collected everything you needed!!" << std::endl;
-		std::cout << "Deliver the supplies and rest up to help defend the Kingdom from the incoming attack." << std::endl;
-	}
+		if (adventurer->getName() == "mage") {
+			std::cout << "Lift the spell that's casted upon the kingdom and start the protection spell" << std::endl;
+		}
+		else {
+			std::cout << "Deliver the supplies and rest up to help defend the Kingdom from the incoming attack." << std::endl;
+		}
 }
-
+}
