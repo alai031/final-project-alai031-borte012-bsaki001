@@ -8,3 +8,15 @@ Game* Game::Instance(){
 	}
 	return _instance;
 };
+
+void Game::setAdventurer(Adventurer* adventurer){
+	this->adventurer = adventurer;
+}
+
+Adventurer* Game::getAdventurer(){
+	return adventurer;
+}
+
+void Game::setJourney(Story* story){
+	this->journey = story;
+}

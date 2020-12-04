@@ -17,6 +17,6 @@ void Trap::bonus() {
 
 void Trap::setrandDamage() {
 	setDamage(rand() % 5 + 1);
-	cout << "A hidden trap is set up for the adventurer..." << endl;
+	cout << "A hidden trap is set up on the floor..." << endl;
 }
 

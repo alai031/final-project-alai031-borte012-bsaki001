@@ -1,14 +1,19 @@
+#ifndef STORY_HPP
+#define STORY_HPP
+
+#include "adventurer.hpp"
 
 class Story {
 public:
 Story(Adventurer* a){
 adventurer = a;
-this->story();
 counter = 10;
 }
 virtual void story() = 0;
-private:
+protected:
 Adventurer* adventurer = nullptr;
 int counter = 0;
-}
+};
 
+
+#endif
