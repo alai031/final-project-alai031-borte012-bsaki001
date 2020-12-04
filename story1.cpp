@@ -1,0 +1,71 @@
+#include "story1.hpp"
+#include "adventurer.hpp"
+#include "monster.hpp"
+#include "trap.hpp"
+#include <iostream>
+
+void Story1::story() {
+	counter = 20;
+	std::cout << "Welcome to your journey " << adventurer->getName() << std::endl;
+	std::cout << "Your Kingdom has gotten wind of an incoming attack unfortunately there isn't much supplies to win." << std::endl;
+	std::cout << "Your mission is to go on a journey to collect the necessary supplies." << std::endl;
+	std::cout << "You will choose between paths to find what you need. " << std::endl;
+	while (counter != 0) {
+		int userInput = 0;
+		while (userInput != 1 && userInput != 2) {
+			std::cout << "Choose a number 1 - 2 to decides which path to continue through." << std::endl;
+			std::cin >> userInput;
+			if (userInput != 1 && userInput != 2) {
+				std::cout << "Invalid input. Please try again." << std::endl;
+			}
+		}
+		int randNum = rand() % 2;
+
+		if (userInput == randNum && counter!= 0) {
+			Monster* newMonster = new Monster(adventurer);
+			while (adventurer->get_health() != 0 && newMonster->getHealth() > 0) {
+				if (adventurer->get_health() != 0) {
+					newMonster->damage();
+					if (adventurer->get_health() != 0) {
+						adventurer->attackMessage();
+						adventurer->attackDamage(newMonster);
+					}
+					else {
+						break;
+					}
+				}
+			}
+		}
+		else {
+			Trap* newTrap = new Trap(adventurer);
+			int randNum = rand() % 2;
+			if (randNum == userInput) {
+				std::cout << "Oh! Wait it is a double trap." << std::endl;
+				newTrap->damage();
+				if (adventurer->get_health() != 0) {
+					newTrap->damage();
+				}
+				else {
+					std::cout << adventurer->getName() << " died in first trap." << std::endl;
+				}
+			}
+			else {
+				newTrap->damage();
+			}
+		}
+
+		--counter;
+
+		if (adventurer->get_health() == 0) {
+			std::cout << "The journey was too much for you to handle and took your life. " << std::endl;
+			std::cout << "Sorry you couldn't complete your journey, the Kingdom will not get the supplies to defend themselves from the incoming attacked." << std::endl;
+			counter = 0;
+		}
+	}
+
+	if (adventurer->get_health() != 0) {
+		std::cout << "Congratulations " << adventurer->getName() << " you have survived your journey and collected everything you needed!!" << std::endl;
+		std::cout << "Deliver the supplies and rest up to help defend the Kingdom from the incoming attack." << std::endl;
+	}
+}
+

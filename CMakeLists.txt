@@ -25,6 +25,7 @@ ADD_EXECUTABLE(main
 	trap.cpp
 	game.cpp
 	story3.cpp
+	story1.cpp
 )
 
 
