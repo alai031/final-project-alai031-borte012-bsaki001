@@ -15,7 +15,7 @@ void Story1::story() {
 		while (userInput != '1' && userInput != '2' && userInput != 'q') {
 			std::cout << "Choose a number 1 - 2 to decides which path to continue through." << std::endl;
 			std::cin >> userInput;
-			if (userInput != '1' && userInput != '2' && userInput 'q') {
+			if (userInput != '1' && userInput != '2' && userInput != 'q') {
 				std::cout << "Invalid input. Please try again." << std::endl;
 			}
 		}
