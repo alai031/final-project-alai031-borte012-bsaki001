@@ -6,6 +6,7 @@
 #include "game.hpp"
 #include "story.hpp"
 #include "story3.hpp"
+#include "story1.hpp"
 
 using namespace std;
 
@@ -58,7 +59,7 @@ int main () {
 
 		if (userInput2 == '1') {
 			cout << "Story 1 called" << endl;
-//game->journey = new Story1(game->adventurer);
+			game->setJourney(new Story1(game->getAdventurer()));
 		}
 
 		else if (userInput2 == '2') {

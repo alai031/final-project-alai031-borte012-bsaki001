@@ -103,5 +103,17 @@ TEST(MageTest, MageInflictsDamageAndGetsAttackTest){
 	EXPECT_EQ(mage->get_health(),143);
 }
 
+TEST(MageTest, setNameTest){
+        Adventurer* mage = new Mage();
+        EXPECT_EQ(mage->getName(),"mage");
+}
+
+TEST(MageTest, setNameToAdventurerTest){
+        Adventurer* mage = new Mage();
+        std::string name = "Adventurer";
+        mage->setName(name);
+        EXPECT_EQ(mage->getName(),"Adventurer");
+}
+
 
 #endif
