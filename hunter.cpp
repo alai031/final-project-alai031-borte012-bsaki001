@@ -6,6 +6,7 @@ using namespace std;
 Hunter::Hunter(){
 	health = 200;
 	damage = 15;
+	name = "hunter";
 };
 
 void Hunter::attackMessage(){

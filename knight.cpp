@@ -6,6 +6,7 @@ using namespace std;
 Knight::Knight() {
 	health = 250;
 	damage = 10;
+	name = "knight";
 }
 
 void Knight::attackMessage(){
