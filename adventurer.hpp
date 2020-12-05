@@ -18,6 +18,7 @@ public:
 	void attackDamage(Monster* monster);
 	int get_health();
 	std::string getName();
+	void setName(std::string name);
 };
 
 #endif

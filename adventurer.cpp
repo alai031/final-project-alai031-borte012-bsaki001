@@ -34,3 +34,7 @@ void Adventurer::attackMessage(){
 std::string Adventurer::getName(){
 	return name;
 }
+
+void Adventurer::setName(std::string name){
+	this->name = name;
+}
