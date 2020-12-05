@@ -40,10 +40,8 @@ int main () {
 		}
 
 		else {
-			cout << "Invalid input" << endl;
+			cout << "Invalid input. Please try again." << endl;
 		}
-
-		cout << "userInput: " << userInput << endl;
 
 
 	}
@@ -53,7 +51,7 @@ int main () {
 		cout << "Choose a story (1, 2, or 3)" << endl;
 		cout << "1. Story 1" << endl;
 		cout << "2. Story 2" << endl;
-		cout << "3. Story 3" << endl;
+		cout << "3. Story 3: Survive to be Promoted or Die to be Forgotten" << endl;
 		cout << "Enter 'q' to quit" << endl;
 		cin >> userInput2;
 
@@ -64,7 +62,6 @@ int main () {
 
 		else if (userInput2 == '2') {
 			cout << "Story 2 called" << endl;
-//game->journey = new Story2(game->adventurer);
 		}
 
 		else if (userInput2 == '3') {
@@ -77,7 +74,7 @@ int main () {
 		}	
 
 		else {
-			cout << "Invalid input" << endl;
+			cout << "Invalid input. Please try again." << endl;
 		}
 
 	}

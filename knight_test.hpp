@@ -1,5 +1,5 @@
-#ifndef __HUNTER_TEST_HPP__
-#define __HUNTER_TEST_HPP__
+#ifndef __KNIGHT_TEST_HPP__
+#define __KNIGHT_TEST_HPP__
 
 #include "gtest/gtest.h"
 

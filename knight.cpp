@@ -10,6 +10,6 @@ Knight::Knight() {
 }
 
 void Knight::attackMessage(){
-	cout << "You shall not best me! The knight slashes the enemy with his sword." << endl;
+	cout << "You shall not best me! The Knight lunges at the enemy with his sword." << endl;
 }
 
