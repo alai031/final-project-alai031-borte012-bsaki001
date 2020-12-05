@@ -40,10 +40,8 @@ int main () {
 		}
 
 		else {
-			cout << "Invalid input" << endl;
+			cout << "Invalid input. Please try again." << endl;
 		}
-
-		cout << "userInput: " << userInput << endl;
 
 
 	}
@@ -64,7 +62,6 @@ int main () {
 
 		else if (userInput2 == '2') {
 			cout << "Story 2 called" << endl;
-//game->journey = new Story2(game->adventurer);
 		}
 
 		else if (userInput2 == '3') {
@@ -77,7 +74,7 @@ int main () {
 		}	
 
 		else {
-			cout << "Invalid input" << endl;
+			cout << "Invalid input. Please try again." << endl;
 		}
 
 	}
