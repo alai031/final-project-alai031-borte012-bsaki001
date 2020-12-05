@@ -85,4 +85,17 @@ TEST(KnightTest, getHealthAtDeath) {
     EXPECT_EQ(adventurer->get_health(), 0);
 }
 
+TEST(KnightTest, setNameTest){
+        Adventurer* knight = new Knight();
+        EXPECT_EQ(knight->getName(),"knight");
+}
+
+TEST(KnightTest, setNameToAdventurerTest){
+        Adventurer* knight = new Knight();
+        std::string name = "Adventurer";
+        knight->setName(name);
+        EXPECT_EQ(knight->getName(),"Adventurer");
+}
+
+
 #endif
