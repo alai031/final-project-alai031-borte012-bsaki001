@@ -6,7 +6,7 @@ using namespace std;
 
 void Monster::damage() {
 if (this->health > 0) {
-	cout << "The monster inflicts " << dmg << " damage to the adventurer!" << endl;
+	cout << "The monster inflicts " << dmg << " damage to the " << adventurer->getName() "!" << endl;
 	adventurer->change_health(dmg);
 	cout << "The " << adventurer->getName() << " has " << adventurer->get_health() << " health remaining." << endl;
 	turnsTillBackup--;
@@ -28,14 +28,14 @@ void Monster::bonus() {
 */
 
 void Monster::decrementHealth(int damage) {
-	cout << "The adventurer inflicts " << damage << " damage to the monster!" << endl;
+	cout << "The " << adventurer->getName() << " inflicts " << damage << " damage to the monster!" << endl;
 	health -= damage;
 	if (this->health <= 0){
 		cout << "The monster faints." << endl;
 		if (childMonsters.size() > 0) {
 			cout << "The other monsters flee." << endl;
 		}
-		cout << "The adventurer wins the battle and advances forward." << endl;
+		cout << "The " << adventurer->getName()  " wins the battle and advances forward." << endl;
 	}
 	else {
 		cout << "The monster has " << health << " health remaining." << endl;

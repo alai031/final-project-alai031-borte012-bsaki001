@@ -5,9 +5,9 @@
 using namespace std;
 
 void Trap::damage() {
-	cout << "The trap inflicted " << dmg << " damage to the adventurer!" << endl;
+	cout << "The trap inflicted " << dmg << " damage to the " << adventurer->getName() << "!" << endl;
 	adventurer->change_health(dmg);
-	cout << "The adventurer's health is now " << adventurer->get_health() << "." << endl;
+	cout << "The " << adventurer->getName() << "'s health is now " << adventurer->get_health() << "." << endl;
 }
 /*
 void Trap::bonus() {
