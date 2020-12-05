@@ -8,7 +8,7 @@ void Monster::damage() {
 if (this->health > 0) {
 	cout << "The monster inflicts " << dmg << " damage to the adventurer!" << endl;
 	adventurer->change_health(dmg);
-	cout << "The adventurer has " << adventurer->get_health() << " health remaining." << endl;
+	cout << "The " << adventurer->getName() << " has " << adventurer->get_health() << " health remaining." << endl;
 	turnsTillBackup--;
 	if (turnsTillBackup == 0) {
 		callbackup();

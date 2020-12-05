@@ -23,13 +23,13 @@ TEST(GameTest, GameSingletonFunctionality) {
 
 TEST(GameTest, GameNullAdventurerPtr) {
 	Game* newGame = newGame->Instance();
-	EXPECT_EQ(newGame->adventurer, nullptr);
+	EXPECT_EQ(newGame->getAdventurer(), nullptr);
 }
 
 TEST(GameTest, GameValidAdventurerPtr) {
 	Game* newGame = newGame->Instance();
-	newGame->adventurer = new Knight();
-	EXPECT_NE(newGame->adventurer, nullptr);
+	newGame->setAdventurer(new Knight()); 
+	EXPECT_NE(newGame->getAdventurer(), nullptr);
 }
 
-#endif        
+#endif
