@@ -5,6 +5,7 @@ Adventurer::Adventurer()
 {
 	this->health = health;
 	this->damage = damage;
+	this->name = name;
 }
 
 void Adventurer::change_health(int healthChange)
@@ -28,4 +29,12 @@ int Adventurer::get_health()
 
 void Adventurer::attackMessage(){
         std::cout << "Adventurer's default attack message " << std::endl;
+}
+
+std::string Adventurer::getName(){
+	return name;
+}
+
+void Adventurer::setName(std::string name){
+	this->name = name;
 }

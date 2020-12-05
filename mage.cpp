@@ -4,6 +4,7 @@ Mage::Mage() : Adventurer()
 {
 	this-> health = 150;
 	this-> damage = 20;
+	this-> name = "mage";
 }
 
 void Mage::attackMessage(){

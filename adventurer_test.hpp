@@ -2,6 +2,7 @@
 #define ADVENTURER_TEST_HPP
 
 #include "adventurer.hpp"
+#include <iostream>
 
 TEST(AdventurerTest, defaultHealthTest){
         Adventurer* adventurer = new Adventurer();
@@ -97,6 +98,30 @@ TEST(AdventurerTest, adventurerInflictsDamageIncreaseHealthTest){
         EXPECT_EQ(monster->getHealth(),47);
         EXPECT_EQ(adventurer->get_health(),0);
 }
+
+TEST(AdventurerTest, getNameTest){
+	Adventurer* adventurer = new Adventurer();
+	
+	EXPECT_EQ(adventurer->getName(), "");
+}
+
+TEST(AdventurerTest, setNameTest){
+	Adventurer* adventurer = new Adventurer();
+	std::string name = "Adventurer";
+	adventurer->setName(name);
+	EXPECT_EQ(adventurer->getName(),"Adventurer");
+}
+
+TEST(AdventurerTest, setNameTwiceTest){
+        Adventurer* adventurer = new Adventurer();
+        std::string name = "Adventurer";
+        adventurer->setName(name);
+        EXPECT_EQ(adventurer->getName(),"Adventurer");
+	name = "John";
+	adventurer->setName(name);
+	EXPECT_EQ(adventurer->getName(),"John");
+}
+
 
 #endif
 
