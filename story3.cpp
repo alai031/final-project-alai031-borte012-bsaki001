@@ -29,8 +29,10 @@ void Story3::story(){
 			Monster* newMonster = new Monster(adventurer);
 			while (adventurer->get_health() != 0 && newMonster->getHealth() > 0){
 				newMonster->damage();
-				adventurer->attackMessage();
-				adventurer->attackDamage(newMonster);
+				if (adventurer->get_health() != 0){
+					adventurer->attackMessage();
+					adventurer->attackDamage(newMonster);
+				}
 			}
 		}
 
