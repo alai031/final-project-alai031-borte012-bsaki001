@@ -24,8 +24,8 @@ TEST(TrapTest, trapConstructor3) {
 	Adventurer* a = new Adventurer();
 	Trap* test = new Trap(a);
 	EXPECT_EQ(test->getAdventurer(), a);
-	EXPECT_GE(test->getDamage(), 1);
-	EXPECT_LE(test->getDamage(), 5);
+	EXPECT_GE(test->getDamage(), 5);
+	EXPECT_LE(test->getDamage(), 10);
 }
 
 TEST(TrapTest, trapConstructor4) {
@@ -41,18 +41,18 @@ TEST(TrapTest, trapsetDmg) {
         Adventurer* b = new Adventurer();
         Trap* test = new Trap(b);
         EXPECT_EQ(test->getAdventurer(), b);
-        EXPECT_GE(test->getDamage(), 1);
-        EXPECT_LE(test->getDamage(), 5);
-	test->setDamage(10);
-	EXPECT_EQ(test->getDamage(), 10);
+        EXPECT_GE(test->getDamage(), 5);
+        EXPECT_LE(test->getDamage(), 10);
+	test->setDamage(20);
+	EXPECT_EQ(test->getDamage(), 20);
 }
 
 TEST(TrapTest, trapsetDmg2) {
         Adventurer* c = new Adventurer();
         Trap* test = new Trap(c);
         EXPECT_EQ(test->getAdventurer(), c);
-        EXPECT_GE(test->getDamage(), 1);
-        EXPECT_LE(test->getDamage(), 5);
+        EXPECT_GE(test->getDamage(), 5);
+        EXPECT_LE(test->getDamage(), 10);
         test->setDamage(45);
         EXPECT_EQ(test->getDamage(), 45);
 	test->setDamage(0);
@@ -102,11 +102,11 @@ TEST(TrapTest, trapDamageandGet) {
 TEST(TrapTest, trapsetrandD) {
         Adventurer* a = new Adventurer();
         Trap* test = new Trap(a);
-        EXPECT_GE(test->getDamage(), 1);
-        EXPECT_LE(test->getDamage(), 5);
+        EXPECT_GE(test->getDamage(), 5);
+        EXPECT_LE(test->getDamage(), 10);
 	test->setrandDamage();
-	EXPECT_GE(test->getDamage(), 1);
-        EXPECT_LE(test->getDamage(), 5);
+	EXPECT_GE(test->getDamage(), 5);
+        EXPECT_LE(test->getDamage(), 10);
 }
 
 TEST(TrapTest, trapsetrandD2) {
@@ -114,16 +114,16 @@ TEST(TrapTest, trapsetrandD2) {
 	Adventurer* b = new Adventurer();
         Trap* test = new Trap(a);
 	Trap* test2 = new Trap(b);
-        EXPECT_GE(test->getDamage(), 1);
-        EXPECT_LE(test->getDamage(), 5);
-	EXPECT_GE(test2->getDamage(), 1);
-        EXPECT_LE(test2->getDamage(), 5);
+        EXPECT_GE(test->getDamage(), 5);
+        EXPECT_LE(test->getDamage(), 10);
+	EXPECT_GE(test2->getDamage(), 5);
+        EXPECT_LE(test2->getDamage(), 10);
         test->setrandDamage();
 	test2->setrandDamage();
-        EXPECT_GE(test->getDamage(), 1);
-        EXPECT_LE(test->getDamage(), 5);
-	EXPECT_GE(test2->getDamage(), 1);
-        EXPECT_LE(test2->getDamage(), 5);
+        EXPECT_GE(test->getDamage(), 5);
+        EXPECT_LE(test->getDamage(), 10);
+	EXPECT_GE(test2->getDamage(), 5);
+        EXPECT_LE(test2->getDamage(), 10);
 }
 
 
