@@ -80,7 +80,7 @@ TEST(MageTest, changeHealthAndMonsterAttackTest){
         monster->setHealth(20);
 	mage->change_health(20);
         monster->damage();
-        EXPECT_EQ(mage->get_health(),122);
+        EXPECT_EQ(mage->get_health(),121);
 }
 
 TEST(MageTest, MageInflictsDamageTest){
@@ -100,7 +100,7 @@ TEST(MageTest, MageInflictsDamageAndGetsAttackTest){
         mage->attackMessage();
         EXPECT_EQ(monster->getHealth(),40);
 	monster->damage();
-	EXPECT_EQ(mage->get_health(),143);
+	EXPECT_EQ(mage->get_health(),144);
 }
 
 TEST(MageTest, setNameTest){
