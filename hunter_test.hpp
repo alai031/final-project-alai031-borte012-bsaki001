@@ -9,7 +9,7 @@
 
 TEST(HunterTest, Constructor) {
     Adventurer* adventurer = new Hunter();
-    EXPECT_EQ(adventurer->get_health(), 200);
+    EXPECT_EQ(adventurer->get_health(), 100);
 }
 
 TEST(HunterTest, attackMessageOutputted) {
@@ -40,19 +40,19 @@ TEST(HunterTest, attackDamageMonsterDies) {
 TEST(HunterTest, changeHealthWithPositiveArg) {
     Adventurer* adventurer = new Hunter();
     adventurer->change_health(40);
-    EXPECT_EQ(adventurer->get_health(), 160);
+    EXPECT_EQ(adventurer->get_health(), 60);
 }
 
 TEST(HunterTest, changeHealthWithNegativeArg) {
     Adventurer* adventurer = new Hunter();
     adventurer->change_health(-50);
-    EXPECT_EQ(adventurer->get_health(), 250);
+    EXPECT_EQ(adventurer->get_health(), 150);
 }
 
 TEST(HunterTest, changeHealthWithZeroArg) {
     Adventurer* adventurer = new Hunter();
     adventurer->change_health(0);
-    EXPECT_EQ(adventurer->get_health(), 200);
+    EXPECT_EQ(adventurer->get_health(), 100);
 }
 
 TEST(HunterTest, changeHealthToZeroHP) {
@@ -69,7 +69,7 @@ TEST(HunterTest, changeHealthToNegativeHP) {
 
 TEST(HunterTest, getHealthFullHP){
     Adventurer* adventurer = new Hunter();
-    EXPECT_EQ(adventurer->get_health(), 200);
+    EXPECT_EQ(adventurer->get_health(), 100);
 }
 
 TEST(HunterTest, getHealthZeroHP){
