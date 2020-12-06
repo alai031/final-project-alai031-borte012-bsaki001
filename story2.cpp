@@ -109,7 +109,7 @@ while (input != '1' && input != '2') {
 			cout << "The drink turns out to be a deadly poison!" << endl;
 			adventurer->change_health(r * 5);
 			if (adventurer->get_health() != 0) {
-				cout << "The "  << adventurer->getName() << " survives it with " << adventurer->get_health() << " and trudges forth." << endl << endl;
+				cout << "The "  << adventurer->getName() << " survives it with " << adventurer->get_health() << " health and trudges forth." << endl << endl;
 			}
 		}
 		else{
