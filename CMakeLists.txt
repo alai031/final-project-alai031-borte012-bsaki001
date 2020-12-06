@@ -26,6 +26,7 @@ ADD_EXECUTABLE(main
 	game.cpp
 	story3.cpp
 	story1.cpp
+	story2.cpp
 )
 
 

@@ -32,4 +32,4 @@ TEST(GameTest, GameValidAdventurerPtr) {
 	EXPECT_NE(newGame->getAdventurer(), nullptr);
 }
 
-#endif        
+#endif
