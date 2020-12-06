@@ -5,7 +5,7 @@
 #include <iostream>
 
 void Story1::story() {
-	counter = 20;
+	counter = 10;
 	std::cout << "Welcome to your journey " << adventurer->getName() << std::endl;
 	if (adventurer->getName() == "mage") {
 		std::cout<< "The kingdom was put under a spell for your journey you must find all the supplies to counter act the spell with another and then create a protection spell to protect the kingdom from any future attacks." << std::endl;

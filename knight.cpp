@@ -4,7 +4,7 @@
 using namespace std;
 
 Knight::Knight() {
-	health = 250;
+	health = 140;
 	damage = 10;
 	name = "knight";
 }

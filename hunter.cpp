@@ -4,7 +4,7 @@
 using namespace std;
 
 Hunter::Hunter(){
-	health = 200;
+	health = 100;
 	damage = 15;
 	name = "hunter";
 };
