@@ -72,6 +72,10 @@
  > * Plan one more sprint (that you will not necessarily complete before the end of the quarter). Your In-progress and In-testing columns should be empty (you are not doing more work currently) but your TODO column should have a full sprint plan in it as you have done before. This should include any known bugs (there should be some) or new features you would like to add. These should appear as issues/cards on your Kanban board. 
  ## Screenshots
  > Screenshots of the input/output after running your application
+ Story 3: 
+  <img src = "https://github.com/cs100/final-project-alai031-borte012-bsaki001/blob/master/story3(1).png" width = "1000"/>
+  <img src = "https://github.com/cs100/final-project-alai031-borte012-bsaki001/blob/master/story3(2).png" width = "1000"/>
+  <img src = "https://github.com/cs100/final-project-alai031-borte012-bsaki001/blob/master/story3(3).png" width = "1000"/>
  ## Installation/Usage
  > Instructions on installing and running your application
  ## Testing
