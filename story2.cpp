@@ -7,7 +7,7 @@
 using namespace std;
 
 void Story2::story(){
-int num = 0;
+char c;
 cout << "The "  << adventurer->getName() << " start out in a dark dungeon that has an ominous feel to it." << endl;
 while (counter != 0){
 	cout << "Ahead of the "  << adventurer->getName() << " lies three doors." << endl;
@@ -15,16 +15,16 @@ while (counter != 0){
 	cout << "1 - Door 1" << endl;
 	cout << "2 - Door 2" << endl;
 	cout << "3 - Door 3" << endl;
-	cin >> num;
+	cin >> c;
 	cout << endl;
 
-	if (num == 1) {
+	if (c == '1') {
 		doorOne();
 	}
-	else if (num == 2) {
+	else if (c == '2') {
 		doorTwo();
 	}
-	else if (num == 3) {
+	else if (c == '3') {
 		doorThree();
 	}
 	else {
@@ -94,17 +94,17 @@ cout << "The door locks behind them so they decide to move onwards. However as t
 
 void Story2::doorThree() {
 int r = rand() % 3 + 3;
-int input = 0;
+char input;
 cout << "The "  << adventurer->getName() << " enters door three." << endl;
 cout << "Inside the room lies a mysterious drink." << endl;
 cout << endl;
-while (input != 1 && input != 2) {
+while (input != '1' && input != '2') {
 	cout << "Should they drink it?" << endl;
 	cout << "1 - yes" << endl;
 	cout << "2 - no" << endl;
 	cin >> input;
 
-	if (input == 1) {
+	if (input == '1') {
 		if (r <=6) {
 			cout << "The drink turns out to be a deadly poison!" << endl;
 			adventurer->change_health(r * 5);
@@ -116,7 +116,7 @@ while (input != 1 && input != 2) {
 			cout << "The drink turns out to be harmless, but very tasty!" << endl;
 		}
 	}
-	else if (input == 2) {
+	else if (input == '2') {
 		cout << "Instead of taking the drink, the " << adventurer->getName() << " wanders around the room." << endl;
 		cout << "While they are off-guard..." << endl;
                	Monster* m = new Monster(adventurer);

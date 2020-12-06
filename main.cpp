@@ -16,23 +16,26 @@ int main () {
 	char userInput;
 
 	while (userInput != '1' && userInput != '2' && userInput != '3' && userInput != 'q') {
-		cout << "Select your adventurer:" << endl;
-		cout << "1. knight" << endl;
-		cout << "2. mage" << endl;
-		cout << "3. hunter" << endl;
+		cout << "Select your adventurer (1, 2, or 3)" << endl;
+		cout << "1. knight (easy)" << endl;
+		cout << "2. hunter (normal)" << endl;
+		cout << "3. mage (hard)" << endl;
 		cout << "Enter 'q' to quit" << endl;
 		cin >> userInput;
 
 		if (userInput == '1') {
 			game->setAdventurer(new Knight());
+			cout << "Knight selected" << endl;
 		}
 
 		else if (userInput == '2') {
-			game->setAdventurer(new Mage());
+			game->setAdventurer(new Hunter());
+			cout << "Hunter selected" << endl;
 		}
 
 		else if (userInput == '3') {
-			game->setAdventurer(new Hunter());
+			game->setAdventurer(new Mage());
+			cout << "Mage selected" << endl;
 		}
 
 		else if (userInput == 'q') {
@@ -50,8 +53,8 @@ int main () {
 	char userInput2;
 	while (userInput2 != '1' && userInput2 != '2' && userInput2 != '3' && userInput2 != 'q') {
 		cout << "Choose a story (1, 2, or 3)" << endl;
-		cout << "1. Story 1" << endl;
-		cout << "2. Story 2" << endl;
+		cout << "1. Story 1: Find Resources or be Doomed" << endl;
+		cout << "2. Story 2: Dungeon Quest" << endl;
 		cout << "3. Story 3: Survive to be Promoted or Die to be Forgotten" << endl;
 		cout << "Enter 'q' to quit" << endl;
 		cin >> userInput2;
@@ -61,7 +64,6 @@ int main () {
 		}
 
 		else if (userInput2 == '2') {
-			cout << "Story 2 called" << endl;
 			game->setJourney(new Story2(game->getAdventurer()));
 		}
 
