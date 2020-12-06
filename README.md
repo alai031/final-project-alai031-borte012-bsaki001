@@ -89,9 +89,9 @@
  ## Installation/Usage
  > Instructions on installing and running your application
  >
- The application is run on command line so there aren't additional dependencies other than including all the necessary files. Basic inclusion of the story components that were used are shown on the OMT. Makes sure the user inputs a valid number.
+ The application is run on command line so there aren't additional dependencies other than including all the necessary files. Basic inclusion of the story components that were used are shown on the OMT diagram. Make sure the user inputs a valid number.
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
  >
- We thoroughly tested each of the individual component within the OMT (using unit testing/google test) before combining it into the story files. Story files were tested through the output statements that could show different minor errors.
+ We thoroughly tested each of the individual component within the OMT diagram (using unit testing/google test) before combining it into the story files. Story files were tested through the output statements that could show different minor errors.
  
