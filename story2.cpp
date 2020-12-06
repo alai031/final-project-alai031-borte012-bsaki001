@@ -51,8 +51,10 @@ cout << "They walk towards it and unbeknownst of them..." << endl;
                 Monster* m = new Monster(adventurer);
                 while (adventurer->get_health() != 0 && m->getHealth() > 0){
                         m->damage();
+			if(adventurer->get_health() != 0) {
                         adventurer->attackMessage();
                         adventurer->attackDamage(m);
+			}
                 }
         }
 
@@ -74,8 +76,10 @@ cout << "The door locks behind them so they decide to move onwards. However as t
                 Monster* m = new Monster(adventurer);
                 while (adventurer->get_health() != 0 && m->getHealth() > 0){
                         m->damage();
+			if(adventurer->get_health() != 0) {
                         adventurer->attackMessage();
                         adventurer->attackDamage(m);
+			}
                 }
         }
 
@@ -118,8 +122,10 @@ while (input != 1 && input != 2) {
                	Monster* m = new Monster(adventurer);
 		while (adventurer->get_health() != 0 && m->getHealth() > 0){
                         m->damage();
+			if(adventurer->get_health() != 0) {
                	        adventurer->attackMessage();
                        	adventurer->attackDamage(m);
+			}
                 }
 		cout << endl;
 	}

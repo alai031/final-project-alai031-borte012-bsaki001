@@ -2,7 +2,7 @@
 
 Mage::Mage() : Adventurer()
 {
-	this-> health = 150;
+	this-> health = 75;
 	this-> damage = 20;
 	this-> name = "mage";
 }
