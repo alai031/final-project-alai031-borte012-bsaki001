@@ -76,18 +76,22 @@
  Story 1 : 
  <img src = "https://github.com/cs100/final-project-alai031-borte012-bsaki001/blob/master/story1.png" width = "1000"/>
  Story 2:
+ <img src = "https://github.com/cs100/final-project-alai031-borte012-bsaki001/blob/master/outputstory2(5).png" width = "1000"/>
  <img src = "https://github.com/cs100/final-project-alai031-borte012-bsaki001/blob/master/outputstory2.png" width = "1000"/>
  <img src = "https://github.com/cs100/final-project-alai031-borte012-bsaki001/blob/master/outputstory2(1).png" width = "1000"/>
  <img src = "https://github.com/cs100/final-project-alai031-borte012-bsaki001/blob/master/outputstory2(2).png" width = "1000"/>
  <img src = "https://github.com/cs100/final-project-alai031-borte012-bsaki001/blob/master/outputstory2(3).png" width = "1000"/>
  <img src = "https://github.com/cs100/final-project-alai031-borte012-bsaki001/blob/master/outputstory2(4).png" width = "1000"/>
- <img src = "https://github.com/cs100/final-project-alai031-borte012-bsaki001/blob/master/outputstory2(5).png" width = "1000"/>
  Story 3: 
   <img src = "https://github.com/cs100/final-project-alai031-borte012-bsaki001/blob/master/story3(1).png" width = "1000"/>
   <img src = "https://github.com/cs100/final-project-alai031-borte012-bsaki001/blob/master/story3(2).png" width = "1000"/>
   <img src = "https://github.com/cs100/final-project-alai031-borte012-bsaki001/blob/master/story3(3).png" width = "1000"/>
  ## Installation/Usage
  > Instructions on installing and running your application
+ >
+ The applicaiton is run on commandline so there aren't additional dependencies other than including all the necessary files. Basic inclusion of the story components that were used are shown on the OMT. Makes sure the user inputs a valid number.
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
+ >
+ We thoroughly tested each of the individual component within the OMT (using unit testing/google test) before combining it into the story files. Story files were tested through the cout statements that coudl show different minor errors.
  
