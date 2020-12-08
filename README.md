@@ -89,7 +89,7 @@
  ## Installation/Usage
  > Instructions on installing and running your application
  >
- The application is run on command line so there aren't additional dependencies other than including all the necessary files. Basic inclusion of the story components that were used are shown on the OMT diagram. Make sure the user inputs a valid number.
+ The application is run on command line so there aren't additional dependencies other than including all the necessary files. Basic inclusion of the story components that were used are shown on the OMT diagram. Make sure the user inputs a valid number. Only local copies are available so use this repo by git cloning it and running cmake to create the executable. Then once the executable is run, the application will start.
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
  >
